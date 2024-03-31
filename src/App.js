@@ -68,7 +68,7 @@ function App() {
   const [moveDistance, setMoveDistance] = useState(0);
 
   const handleSubmit = () => {
-    const URL = "localhost:8080";
+    const URL = "spring-backend-3.onrender.com";
     axios
       .post(`http://${URL}/api/maze/generate`, {
         difficulty: difficulty,
